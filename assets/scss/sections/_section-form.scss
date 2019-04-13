@@ -1,0 +1,44 @@
+.form {
+    background-color: $color-dark;
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        padding: 30px 20px;
+        width: 100%;
+    }
+    &-item {
+        &__input {
+            height: 60px;
+            display: block;
+            width: 100%;
+            padding: 0 20px;
+            color: $color-light;
+            letter-spacing: 0.15em;
+            font-size: 18px;
+            @include color-light(0.05);
+            border: 2px solid rgba(255, 255, 255, 0);
+            border-bottom-color: rgba(255, 255, 255, 0.3);
+            transition: background-color 0.5s, border 0.5s;
+
+            &:hover,
+            &:focus {
+                @include color-light(0.15);
+                border-bottom-color: $color-light;
+            }
+        }
+        .btn-accent {
+            width: 100%;
+            margin: 0;
+            color: $color-light;
+            @include color-light(0.1);
+            border: 2px solid rgba(255, 255, 255, 0);
+            border-bottom-color: rgba(255, 255, 255, 0.3);
+
+            &:hover {
+                background-color: $color-orange;
+                border-color: $color-light;
+            }
+        }
+    }
+}
+

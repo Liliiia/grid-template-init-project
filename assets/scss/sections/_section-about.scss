@@ -1,0 +1,50 @@
+.about {
+    background-color: $color-about;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 80px;
+
+    .container {
+        display: grid;
+        grid-gap: 100px;
+        grid-template-columns: 1fr 270px;
+    }
+
+    &-content {
+        h2 {
+            color: $color-dark;
+            margin-bottom: 50px;
+            margin-top: 0;
+        }
+        p {
+            font-size: 18px;
+            letter-spacing: 1px;
+
+            &:first-of-type {
+                position: relative;
+                
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 2px;
+                    height: 200px;
+                    top: 0;
+                    @include color-grey(0.1);
+                    right: -50px;
+                }
+            }
+        }
+    }
+
+    &-image {
+        display: grid;
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-content: center;
+        justify-items: center;
+        padding-top: 20px;
+        img {
+            max-width: 100%;
+        }
+    }
+}

@@ -7,3 +7,6 @@
 @mixin color-dark-grey($opacity: 0.25) {
     background-color: rgba($color-darkgrey, $opacity);
 }
+@mixin color-grey($opacity:0.1) {
+    background-color: rgba($color-grey, $opacity);
+}
