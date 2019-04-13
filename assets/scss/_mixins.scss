@@ -1,0 +1,9 @@
+@mixin color-dark($opacity: 0.8) {
+    background-color: rgba($color-dark, $opacity);
+}
+@mixin color-light($opacity: 0.1) {
+    background-color: rgba($color-light, $opacity);
+}
+@mixin color-dark-grey($opacity: 0.25) {
+    background-color: rgba($color-darkgrey, $opacity);
+}
